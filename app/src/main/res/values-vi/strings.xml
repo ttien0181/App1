@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App1</string>
+    <string name="hello">Xin chào</string>
+    <string name="bye">Tạm biệt</string>
+    <string name="cannot_divide_by_zero">Không thể chia cho 0</string>
+</resources>
