@@ -66,26 +66,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleOperationClick(operation: String){
-//        if(operation == "="){
-//            if(currentOperation == ""){
-//                currentText.text="$firstValue"
-//            } else {
-//                getResult(currentOperation)
-//                currentText.text = "$firstValue"
-//                currentOperation = ""
-//                secondValue = ""
-//            }
-//        }
-//        if(secondValue == ""){
-//            currentOperation = operation
-//            previousText.text = "$firstValue $operation"
-//            currentText.text = "0"
-//        }else{
-//            getResult(currentOperation)
-//            currentOperation = operation
-//            secondValue = ""
-//            currentText.text = "$firstValue $operation 0"
-//        }
+
         if (firstValue == null) return
 
         if (secondValue.isNotEmpty()) {
@@ -100,12 +81,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleNumberClick(numberButton: Button){
-//        currentText.text = (currentText.text.toString() + numberButton.text.toString()).toInt().toString()
-//        if(secondValue.isEmpty()  && currentOperation == ""){
-//            firstValue = currentText.text.toString().toInt()
-//        } else {
-//            secondValue = currentText.text.toString()
-//        }
+
         val number = numberButton.text.toString()
         if (currentText.text.toString() == "0") {
             currentText.text = number
@@ -121,12 +97,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleFunctionClick(function: String){
-//        when (function) {
-//            "CE" -> currentText.text = ""
-//            "C" -> currentText.text = currentText.text.toString().dropLast(1)
-//            "BS" -> currentText.text = "-" + currentText.text.toString()
-//
-//        }
+
         when (function) {
             "CE" -> {
                 currentText.text = "0"
